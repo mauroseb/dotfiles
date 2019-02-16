@@ -1,0 +1,64 @@
+[user]
+    name = Mauro S. Oddi
+    email = mauro.oddi@gmail.com
+
+[core]
+    editor = vim
+    excludesfile = ~/.gitignore
+
+[color]
+    ui = auto
+    status = auto
+    branch = auto
+
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
+
+#[color "status"]
+    #added = green bold
+    #changed = yellow bold
+    #untracked = red bold
+
+#[color "branch"]
+    #current = yellow bold
+    #local = green bold
+    #remote = cyan bold
+
+[diff]
+    tool = vimdiff
+
+[alias]
+    a = add
+    aa = add --all
+    b = blame -w
+    c = commit
+    ca = commit -a
+    cm = commit -m
+    br = branch
+    f = fetch
+    d = diff
+    s = status
+    sh = show
+    l = log -i --pretty='format:%Cred %h %Cgreen (%an <%ae>) - %Creset %ci'
+    shpretty = show -s --pretty='tformat:%h (%s, %ad)' --date=short
+    unstage = reset HEAD --
+    nicelog = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cr) %C(bold blue)<%aE>%Creset [%G?]'
+    #pr-url =!"xdg-open https://github.com/$(git config github.user)/$(basename $(git rev-parse --show-toplevel))/pull/new/$1:$2...$(git branch-current) #"
+
+
+[push]
+    default = matching
+
+[branch]
+    autosetupbase = always
+    autosetuprebase = always
+
+[merge]
+    tool = vimdiff
+
+#  [color] status = auto branch = auto interactive = auto diff = auto
+
