@@ -5,3 +5,4 @@ Another dotfiles repo
  - tmux
  - hexchat
  - bash
+ - git
