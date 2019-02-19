@@ -12,7 +12,6 @@ set softtabstop=4
 set showtabline=4
 set expandtab
 set number
-set paste
 set ruler
 set autoindent
 " for terminator to set colors properly
@@ -151,6 +150,7 @@ let g:airline_theme='dark'
 let g:nerdtree_tabs_open_on_console_startup = 1
 
 " Allow saving with sudo
-cmap w!! w !sudo tee % > /dev/null
+" cmap w!! w !sudo tee % > /dev/null
 
+set paste
 "EOF
