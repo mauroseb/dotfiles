@@ -45,6 +45,7 @@
     sh = show
     l = log -i --pretty='format:%Cred %h %Cgreen (%an <%ae>) - %Creset %ci'
     shpretty = show -s --pretty='tformat:%h (%s, %ad)' --date=short
+	whatis = show -s --pretty='tformat:%h (%s, %ad)' --date=short
     unstage = reset HEAD --
     nicelog = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cr) %C(bold blue)<%aE>%Creset [%G?]'
     #pr-url =!"xdg-open https://github.com/$(git config github.user)/$(basename $(git rev-parse --show-toplevel))/pull/new/$1:$2...$(git branch-current) #"
