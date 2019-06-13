@@ -61,5 +61,3 @@
 [merge]
     tool = vimdiff
 
-#  [color] status = auto branch = auto interactive = auto diff = auto
-
