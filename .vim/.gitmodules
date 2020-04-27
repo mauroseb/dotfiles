@@ -16,9 +16,6 @@
 [submodule "bundle/git"]
 	path = bundle/git
 	url = https://github.com/tpope/vim-git.git
-[submodule "bundle/vim-pep8"]
-	path = bundle/vim-pep8
-	url = https://github.com/jbking/vim-pep8
 [submodule "bundle/vim-rails"]
 	path = bundle/vim-rails
 	url = https://github.com/tpope/vim-rails
@@ -43,3 +40,13 @@
 [submodule "bundle/vim-rubocop"]
 	path = bundle/vim-rubocop
 	url = https://github.com/ngmy/vim-rubocop
+[submodule "bundle/vim-pep8"]
+	path = bundle/vim-pep8
+	url = https://github.com/nvie/vim-pep8
+[submodule "bundle/vimux"]
+	path = bundle/vimux
+	url = https://github.com/benmills/vimux
+[submodule "bundle/vimux-pyutils"]
+	path = bundle/vimux-pyutils
+	url = https://github.com/julienr/vimux-pyutils
+
