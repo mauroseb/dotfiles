@@ -28,9 +28,11 @@ chatlog() {
 export PS4='+(${BASH_SOURCE:-}:${LINENO:-}): ${FUNCNAME[0]:+${FUNCNAME[0]:-}(): }'
 
 export HISTFILESIZE=100000
-# User specific aliases and functions
+
+# Git specific aliases and functions
 [[ -f ~/.bashrc.git ]] && source ~/.bashrc.git
 
-export PATH=$PATH:~/bin
+
 export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:~/bin:$GOPATH/bin
+
