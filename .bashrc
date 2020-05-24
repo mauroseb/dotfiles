@@ -33,4 +33,4 @@ export HISTFILESIZE=100000
 
 export PATH=$PATH:~/bin
 export GOPATH=$HOME/go
-
+export PATH=$PATH:$GOPATH/bin
