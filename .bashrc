@@ -8,7 +8,7 @@ fi
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
 
-# User specific aliases and functions
+# Some generic aliases and functions
 validate_yaml() {
     ruby -ryaml -e "YAML.load_file '$1'"
 }
