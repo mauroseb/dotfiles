@@ -22,7 +22,7 @@ jsonize() {
 }
 
 chatlog() {
-	grep -5 -nair "$1" /home/maur0x/.config/hexchat/logs/redhat-znc/*
+	grep -5 -nair "$1" ${HOME}/.config/hexchat/logs/*/*
 }
 
 export PS4='+(${BASH_SOURCE:-}:${LINENO:-}): ${FUNCNAME[0]:+${FUNCNAME[0]:-}(): }'
@@ -32,5 +32,5 @@ export HISTFILESIZE=100000
 [[ -f ~/.bashrc.git ]] && source ~/.bashrc.git
 
 export PATH=$PATH:~/bin
-
+export GOPATH=$HOME/go
 
