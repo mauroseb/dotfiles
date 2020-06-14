@@ -8,6 +8,9 @@ fi
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
 
+# Refresh win size
+shopt -s checkwinsize
+
 # Some generic aliases and functions
 validate_yaml() {
     ruby -ryaml -e "YAML.load_file '$1'"
@@ -25,14 +28,17 @@ chatlog() {
 	grep -5 -nair "$1" ${HOME}/.config/hexchat/logs/*/*
 }
 
+# Debug prompt for shell scripts
 export PS4='+(${BASH_SOURCE:-}:${LINENO:-}): ${FUNCNAME[0]:+${FUNCNAME[0]:-}(): }'
 
 export HISTFILESIZE=100000
+export HISTTIMEFORMAT="%d/%m/%y %T"
+export HISTCONTROL=ignoredups
 
 # Git specific aliases and functions
 [[ -f ~/.bashrc.git ]] && source ~/.bashrc.git
 
-
+# Go vars
 export GOPATH=$HOME/go
 export PATH=$PATH:~/bin:$GOPATH/bin
 
