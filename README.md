@@ -6,6 +6,7 @@ Yet another dotfiles repo
  - hexchat
  - bash
  - git
+ - gpg
 
 # Prerequisites
 
