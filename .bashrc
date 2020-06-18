@@ -8,8 +8,8 @@ fi
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
 
-# Refresh win size
-shopt -s checkwinsize
+# Set shell options
+shopt -s cdspell dirspell histappend checkwinsize
 
 # Some generic aliases and functions
 validate_yaml() {
