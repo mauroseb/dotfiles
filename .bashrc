@@ -38,6 +38,9 @@ export HISTCONTROL=ignoredups
 # Git specific aliases and functions
 [[ -f ~/.bashrc.git ]] && source ~/.bashrc.git
 
+# k8s specific aliases and functions
+[[ -f ~/.bashrc.k8s ]] && source ~/.bashrc.k8s
+
 # Go vars
 export GOPATH=$HOME/go
 export PATH=$PATH:~/bin:$GOPATH/bin

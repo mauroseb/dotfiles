@@ -1,0 +1,29 @@
+function set-ns() {
+    NAMESPACE=$1
+    if [ -z $NAMESPACE ]; then
+        echo "Please provide the namespace name: 'set-ns mywebapp'"
+        return 1
+    fi
+
+    kubectl config set-context $(kubectl config current-context) --namespace $NAMESPACE
+
+}
+
+function get-ns() {
+	kubectl get sa default -o jsonpath='{.metadata.namespace}'
+	echo
+}
+
+function oc-events {
+	{
+		echo $'TIME\tNAMESPACE\tTYPE\tREASON\tOBJECT\tSOURCE\tMESSAGE';
+		oc get events -o json "$@" \
+			| jq -r  '.items | map(. + {t: (.eventTime//.lastTimestamp)}) | sort_by(.t)[] | [.t, .metadata.namespace, .type, .reason, .involvedObject.kind + "/" + .involvedObject.name, .source.component + "," + (.source.host//"-"), .message] | @tsv';
+	} \
+		| column -s $'\t' -t \
+		| less -S
+}
+
+# urlencode alias useful for OCP4 Ignition
+alias urlencode='python3 -c "import sys, urllib.parse; print(urllib.parse.quote(sys.argv[1]))"'
+
