@@ -45,12 +45,14 @@ au BufRead,BufNewFile *.txt
   \ set filetype=text shiftwidth=4 tabstop=4 softtabstop=4 expandtab
 au BufRead,BufNewFile *.md
   \ set filetype=markdown shiftwidth=2 tabstop=2 softtabstop=2 expandtab
-"au BufRead,BufNewFile *.py
-"  \ set filetype=python shiftwidth=4 tabstop=4 softtabstop=4 expandtab
+au BufRead,BufNewFile *.py
+  \ set filetype=python shiftwidth=4 tabstop=4 softtabstop=4 expandtab omnifunc=pythoncomplete#Complete
 "au BufRead,BufNewFile *.c
   "\ set filetype=c shiftwidth=4 tabstop=4 softtabstop=4 expandtab
 "au BufRead,BufNewFile *.h
   "\ set filetype=c shiftwidth=4 tabstop=4 softtabstop=4 expandtab
+
+
 
 " Enable indentation matching for =>'s
 filetype plugin indent on
