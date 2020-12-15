@@ -14,7 +14,7 @@ Yet another dotfiles repo
     
 # Setup vim
 
-    # git pull https://github.com/mauroseb/dotfiles
+    # git clone https://github.com/mauroseb/dotfiles
     # cd dotfiles/.vim
     # git submodule update --init --recursive
 
