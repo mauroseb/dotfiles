@@ -10,11 +10,13 @@ Yet another dotfiles repo
 
 # Prerequisites
 
-    # dnf install vim-enhanced ctags
-    
+~~~
+# dnf install vim-enhanced ctags
+~~~ 
 # Setup vim
 
-    # git clone https://github.com/mauroseb/dotfiles
-    # cd dotfiles
-    # git submodule update --init --recursive
-
+~~~
+# git clone https://github.com/mauroseb/dotfiles
+# cd dotfiles
+# git submodule update --init --recursive
+~~~
