@@ -1,3 +1,49 @@
 [submodule ".vim/bundle/vim-go"]
 	path = .vim/bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
+[submodule ".vim/bundle/nerdtree"]
+        path = .vim/bundle/nerdtree
+        url = https://github.com/vim-scripts/The-NERD-tree.git
+[submodule ".vim/bundle/tasklist"]
+        path = .vim/bundle/tasklist
+        url = https://github.com/vim-scripts/Tasklist.vim.git
+[submodule ".vim/bundle/pydoc"]
+        path = .vim/bundle/pydoc
+        url = https://github.com/fs111/pydoc.vim.git
+[submodule ".vim/bundle/py.test"]
+        path = .vim/bundle/py.test
+        url = https://github.com/alfredodeza/pytest.vim.git
+[submodule ".vim/bundle/vim-rails"]
+        path = .vim/bundle/vim-rails
+        url = https://github.com/tpope/vim-rails
+[submodule ".vim/bundle/vim-gitgutter"]
+        path = .vim/bundle/vim-gitgutter
+        url = https://github.com/airblade/vim-gitgutter
+[submodule ".vim/bundle/vim-airline"]
+        path = .vim/bundle/vim-airline
+        url = https://github.com/bling/vim-airline
+[submodule ".vim/bundle/vim-fugitive"]
+        path = .vim/bundle/vim-fugitive
+        url = git://github.com/tpope/vim-fugitive.git
+[submodule ".vim/bundle/nerdtree-git-plugin"]
+        path = .vim/bundle/nerdtree-git-plugin
+        url = https://github.com/xuyuanp/nerdtree-git-plugin
+[submodule ".vim/bundle/vim-nerdtree-tabs"]
+        path = .vim/bundle/vim-nerdtree-tabs
+        url = https://github.com/jistr/vim-nerdtree-tabs.git
+[submodule ".vim/bundle/supertab"]
+        path = .vim/bundle/supertab
+        url = https://github.com/ervandew/supertab
+[submodule ".vim/bundle/vim-rubocop"]
+        path = .vim/bundle/vim-rubocop
+        url = https://github.com/ngmy/vim-rubocop
+[submodule ".vim/bundle/vim-pep8"]
+        path = .vim/bundle/vim-pep8
+        url = https://github.com/nvie/vim-pep8
+[submodule ".vim/bundle/vimux"]
+        path = .vim/bundle/vimux
+        url = https://github.com/benmills/vimux
+[submodule ".vim/bundle/vimux-pyutils"]
+        path = .vim/bundle/vimux-pyutils
+        url = https://github.com/julienr/vimux-pyutils
+
