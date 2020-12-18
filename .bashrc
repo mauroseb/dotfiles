@@ -35,10 +35,13 @@ export HISTFILESIZE=100000
 export HISTTIMEFORMAT="%d/%m/%y %T"
 export HISTCONTROL=ignoredups
 
-# Git specific aliases and functions
+# Git specific vars, aliases and functions
 [[ -f ~/.bashrc.git ]] && source ~/.bashrc.git
 
-# k8s specific aliases and functions
+# k8s specific vars, aliases and functions
+[[ -f ~/.bashrc.k8s ]] && source ~/.bashrc.k8s
+
+# Ansible specific vars, aliases and functions
 [[ -f ~/.bashrc.k8s ]] && source ~/.bashrc.k8s
 
 # Go vars
