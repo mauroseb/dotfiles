@@ -7,6 +7,7 @@ Yet another dotfiles repo
  - bash
  - git
  - gpg
+ - gdb
 
 # Prerequisites
 
