@@ -35,6 +35,9 @@ export HISTFILESIZE=100000
 export HISTTIMEFORMAT="%d/%m/%y %T"
 export HISTCONTROL=ignoredups
 
+# cat clone with wings
+alias cat=bat
+
 # Git specific vars, aliases and functions
 [[ -f ~/.bashrc.git ]] && source ~/.bashrc.git
 
