@@ -32,7 +32,7 @@ chatlog() {
 export PS4='+(${BASH_SOURCE:-}:${LINENO:-}): ${FUNCNAME[0]:+${FUNCNAME[0]:-}(): }'
 
 export HISTFILESIZE=100000
-export HISTTIMEFORMAT="%d/%m/%y %T"
+export HISTTIMEFORMAT="%d/%m/%y %T "
 export HISTCONTROL=ignoredups
 
 # cat clone with wings
@@ -45,7 +45,7 @@ alias cat=bat
 [[ -f ~/.bashrc.k8s ]] && source ~/.bashrc.k8s
 
 # Ansible specific vars, aliases and functions
-[[ -f ~/.bashrc.k8s ]] && source ~/.bashrc.k8s
+[[ -f ~/.bashrc.ansible ]] && source ~/.bashrc.ansible
 
 # Go vars
 export GOPATH=$HOME/go
