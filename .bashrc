@@ -31,6 +31,7 @@ chatlog() {
 # Debug prompt for shell scripts
 export PS4='+(${BASH_SOURCE:-}:${LINENO:-}): ${FUNCNAME[0]:+${FUNCNAME[0]:-}(): }'
 
+export HISTSIZE=10000
 export HISTFILESIZE=100000
 export HISTTIMEFORMAT="%d/%m/%y %T "
 export HISTCONTROL=ignoredups
