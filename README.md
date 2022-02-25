@@ -12,7 +12,7 @@ Yet another dotfiles repo
 # Prerequisites
 
 ~~~
-# dnf install vim-enhanced ctags
+# dnf install vim-enhanced ctags ruby
 ~~~ 
 # Setup vim
 
