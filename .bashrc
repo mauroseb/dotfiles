@@ -36,6 +36,8 @@ export HISTFILESIZE=100000
 export HISTTIMEFORMAT="%d/%m/%y %T "
 export HISTCONTROL=ignoredups
 
+export PATH=$PATH:$HOME/bin:$HOME/.local/bin
+
 # cat clone with wings
 alias cat=bat
 
@@ -50,5 +52,5 @@ alias cat=bat
 
 # Go vars
 export GOPATH=$HOME/go
-export PATH=$PATH:~/bin:$GOPATH/bin
+export PATH=$PATH:$GOPATH/bin
 
