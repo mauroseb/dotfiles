@@ -27,3 +27,4 @@ function oc-events {
 # urlencode alias useful for OCP4 Ignition
 alias urlencode='python3 -c "import sys, urllib.parse; print(urllib.parse.quote(sys.argv[1]))"'
 
+alias k=kubectl
