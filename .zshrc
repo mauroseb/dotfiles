@@ -1,6 +1,7 @@
 # ~/.zshrc file for zsh interactive shells.
 # see /usr/share/doc/zsh/examples/zshrc for examples
 
+
 setopt autocd              # change directory just by typing its name
 #setopt correct            # auto correct mistakes
 setopt interactivecomments # allow comments in interactive mode
@@ -258,3 +259,4 @@ export PATH=$PATH:${HOME}/.local/bin
 export GOPATH=$HOME/go
 export PATH=$PATH:~/bin:$GOPATH/bin
 
+#
