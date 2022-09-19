@@ -23,8 +23,8 @@
         path = .vim/bundle/vim-airline
         url = https://github.com/bling/vim-airline
 [submodule ".vim/bundle/vim-fugitive"]
-        path = .vim/bundle/vim-fugitive
-        url = git://github.com/tpope/vim-fugitive.git
+	path = .vim/bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
 [submodule ".vim/bundle/nerdtree-git-plugin"]
         path = .vim/bundle/nerdtree-git-plugin
         url = https://github.com/xuyuanp/nerdtree-git-plugin
@@ -47,3 +47,6 @@
         path = .vim/bundle/vimux-pyutils
         url = https://github.com/julienr/vimux-pyutils
 
+[submodule ".vim/bundle/vim-git"]
+	path = .vim/bundle/vim-git
+	url = https://github.com/tpope/vim-git.git
