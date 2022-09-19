@@ -1,26 +1,27 @@
-# mauroseb dotfiles
+# Mauro's dotfiles
+
 Yet another dotfiles repo
+
+## Tools
 
  - vim
  - tmux
  - hexchat
  - bash
+ - zsh
  - git
  - gpg
  - gdb
 
-# Prerequisites
+## Setup
 
 ~~~
-$ sudo dnf install -y vim-enhanced ctags ruby bat
-~~~ 
-# Setup vim
-
+$ git clone https://github.com/mauroseb/dotfiles.git
+$ cd dotfiles
+$ make all
 ~~~
-# git clone https://github.com/mauroseb/dotfiles
-# cd dotfiles
-# git submodule update --init --recursive
-# cd
-# ln -s dotfiles/.vimrc .vimrc
-# ln -s dotfiles/.vim .vim
+
+## Remove dotfiles' links
+~~~
+$ make unlink
 ~~~
