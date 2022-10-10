@@ -1,8 +1,8 @@
 SHELL := bash
 .SHELLFLAGS := -eu -o pipefail -c
 
-PACKAGES	:= go zsh git vim tmux keychain evince unrar elinks lynx htop ctags cl-asdf vim-enhanced
-PACKAGES	+= ruby bat python ansible podman bash-completion xz tree strace
+PACKAGES	:= go zsh git vim tmux keychain evince unrar htop ctags vim-enhanced
+PACKAGES	+= ruby bat python39 ansible podman bash-completion xz tree strace
 
 PKG_MGR := dnf
 PKG_FLAGS := -e0 -y
