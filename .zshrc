@@ -260,10 +260,13 @@ export GOPATH=$HOME/go
 export PATH=$PATH:~/bin:$GOPATH/bin
 
 # asdf
-. $HOME/.asdf/asdf.sh 
+. $HOME/.asdf/asdf.sh
 
 # k8s
 alias k='kubectl'
 alias kg='kubectl get'
 alias kgpo='kubectl get pod'
 alias ksysgpo='kubectl --namespace=kube-system get pod'
+
+# Krew
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
