@@ -13,7 +13,7 @@ CONFIGDIR := ~/.config
 DOTFILES := .bashrc .bashrc.ansible .bashrc.git .bashrc.k8s .zshrc .tmux.conf .gdbinit .vimrc .vim .gitconfig
 
 .PHONY: all
-all: check pkgs bash zsh vim ssh tmux gdb ## Install all dotfiles
+all: check pkgs bash zsh vim ssh tmux gdb git ## Install all dotfiles
 
 
 .PHONY: check
