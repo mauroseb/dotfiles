@@ -1,6 +1,6 @@
 [user]
-    name = {{ git_name }}
-    email = {{ git_email }}
+    name = mauroseb
+    email = mauro.oddi@gmail.com
 
 [core]
     editor = vim
