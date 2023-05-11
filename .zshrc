@@ -263,10 +263,14 @@ export PATH=$PATH:~/bin:$GOPATH/bin
 . $HOME/.asdf/asdf.sh
 
 # k8s
+alias o='oc'
 alias k='kubectl'
 alias kg='kubectl get'
 alias kgpo='kubectl get pod'
 alias ksysgpo='kubectl --namespace=kube-system get pod'
+
+# AWS
+export AWS_DEFAULT_PROFILE=openenv1
 
 # Krew
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
