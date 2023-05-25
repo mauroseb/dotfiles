@@ -65,7 +65,8 @@ git: ## Setup Git
 .PHONY: ssh
 ssh:
 	/bin/true
-
+	
+.PHONY: vim
 vim:
 	@echo "Setting up vim.";
 	for file in  $(CURDIR)/.vimrc $(CURDIR)/.vim ; do \
@@ -81,8 +82,6 @@ vim:
 unlink: ## Unlink all dot files from $HOME
 	@echo "Unlinking dot files."
 	@for f in $(DOTFILES); do if [ -h ~/$$f ]; then rm -i ~/$$f; fi ; done
-
-.PHONY: vim
 
 .PHONY: help
 help:
