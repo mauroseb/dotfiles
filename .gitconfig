@@ -65,3 +65,5 @@
 [gitreview]
 	username = {{ gerrit_user }}
 
+[commit]
+        template = ~/.gitmessage
