@@ -11,6 +11,7 @@ dnf -e 0 -q -y install git iperf3 podman wget jq bind-utils make zsh net-tools
 
 git clone --depth 1 https://github.com/mauroseb/dotfiles.git dotfiles
 cd dotfiles ; make all; cd
+usermod -s `which zsh` root
 
 sudo -H -u ${username} bash <<_ASUSER_
 git clone --depth 1 https://github.com/mauroseb/dotfiles.git /home/${username}/dotfiles
