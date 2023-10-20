@@ -21,7 +21,7 @@ $ cd dotfiles
 $ make all
 ~~~
 
-## Remove dotfiles' links
+## Remove links to unset
 ~~~
 $ make unlink
 ~~~
