@@ -260,7 +260,7 @@ export GOPATH=$HOME/go
 export PATH=$PATH:~/bin:$GOPATH/bin
 
 # asdf
-. $HOME/.asdf/asdf.sh
+[[ -f $HOME/.asdf/asdf.sh ]] && . $HOME/.asdf/asdf.sh
 
 # k8s
 alias o='oc'
