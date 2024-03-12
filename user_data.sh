@@ -12,7 +12,7 @@ dnf -e 0 -q -y install git iperf3 podman wget jq bind-utils make zsh net-tools
 if [[ $EUID -eq 0 ]]; then
   cd /root
   git clone --depth 1 https://github.com/mauroseb/dotfiles.git dotfiles
-  dotfiles ; make all; cd
+  cd dotfiles ; make all; cd
   usermod -s `which zsh` root
 fi
 
