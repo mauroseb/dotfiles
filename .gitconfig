@@ -18,15 +18,15 @@
     new = green bold
     whitespace = red reverse
 
-#[color "status"]
-    #added = green bold
-    #changed = yellow bold
-    #untracked = red bold
+[color "status"]
+    added = green bold
+    changed = yellow bold
+    untracked = red bold
 
-#[color "branch"]
-    #current = yellow bold
-    #local = green bold
-    #remote = cyan bold
+[color "branch"]
+    current = yellow bold
+    local = green bold
+    remote = cyan bold
 
 [diff]
     tool = vimdiff
@@ -46,9 +46,7 @@
     l = log -i --pretty='format:%Cred %h %Cgreen (%an <%ae>) - %Creset %ci'
     shpretty = show -s --pretty='tformat:%h (%s, %ad)' --date=short
     unstage = reset HEAD --
-    nicelog = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cr) %C(bold blue)<%aE>%Creset [%G?]'
-    #pr-url =!"xdg-open https://github.com/$(git config github.user)/$(basename $(git rev-parse --show-toplevel))/pull/new/$1:$2...$(git branch-current) #"
-
+    ll = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cr) %C(bold blue)<%aE>%Creset'
 
 [push]
     default = matching
@@ -59,8 +57,6 @@
 
 [merge]
     tool = vimdiff
-
-#  [color] status = auto branch = auto interactive = auto diff = auto
 
 [gitreview]
 	username = {{ gerrit_user }}
