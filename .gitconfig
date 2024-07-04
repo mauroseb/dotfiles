@@ -30,6 +30,7 @@
 
 [diff]
     tool = vimdiff
+    compactionHeuristic = true
 
 [alias]
     a = add
@@ -45,11 +46,18 @@
     sh = show
     l = log -i --pretty='format:%Cred %h %Cgreen (%an <%ae>) - %Creset %ci'
     shpretty = show -s --pretty='tformat:%h (%s, %ad)' --date=short
-    unstage = reset HEAD --
+    #unstage = reset HEAD --
     ll = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cr) %C(bold blue)<%aE>%Creset'
+    graph = "!f() { git log --oneline --abbrev-commit --graph --decorate; }; f"
+
+[init]
+  defaultBranch = main
 
 [push]
     default = matching
+
+[submodule]
+  fetchJobs = "7"
 
 [branch]
     autosetupbase = always
@@ -59,7 +67,7 @@
     tool = vimdiff
 
 [gitreview]
-	username = {{ gerrit_user }}
+	username = mauroseb_g
 
 [commit]
         template = ~/.gitmessage
