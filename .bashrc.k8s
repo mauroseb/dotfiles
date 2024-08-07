@@ -32,4 +32,4 @@ alias kg='kubectl get'
 alias kgpo='kubectl get pod'
 alias ksysgpo='kubectl --namespace=kube-system get pod'
 
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
