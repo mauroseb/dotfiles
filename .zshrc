@@ -257,7 +257,7 @@ export PATH=$PATH:${HOME}/.local/bin
 
 # Go vars
 export GOPATH=$HOME/go
-export PATH=$PATH:~/bin:$GOPATH/bin
+export PATH=$PATH:~/bin:/usr/local/go/bin:$GOPATH/bin
 
 # asdf
 [[ -f $HOME/.asdf/asdf.sh ]] && . $HOME/.asdf/asdf.sh
