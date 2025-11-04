@@ -2,7 +2,7 @@ SHELL := bash
 .SHELLFLAGS := -eu -o pipefail -c
 
 PACKAGES	:= go zsh git vim tmux keychain unrar htop ctags vim-enhanced
-PACKAGES	+= ruby python3 podman bash-completion xz tree strace
+PACKAGES	+= ruby python3 bind-utils bash-completion xz tree strace
 
 PKG_MGR := dnf
 PKG_FLAGS := -q -e0 -y
