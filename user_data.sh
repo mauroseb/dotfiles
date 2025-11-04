@@ -1,6 +1,6 @@
 #!/bin/bash
 # To be run as user-data script for AWS / Azure instances to setup my envrionment (runs as root)
-username=maur0x
+username=ec2-user
 
 dnf -e 0 -q -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
 dnf -e 0 -q -y install git iperf3 wget jq bind-utils make zsh net-tools
